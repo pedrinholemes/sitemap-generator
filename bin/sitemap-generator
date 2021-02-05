@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const { existsSync } = require('fs')
+const { resolve } = require('path')
+
+const path = resolve(__dirname, '..', 'dist', 'index.js')
+
+function run() {
+  if (existsSync(path)) {
+    return require(path)
+  } else {
+    return process.exit(1)
+  }
+}
+
+run()

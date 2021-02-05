@@ -1,0 +1,7 @@
+node_modules/
+.prettierrc.*
+prettier.config.js
+
+dist/**/*
+src/pages/**/*
+public/**/*
